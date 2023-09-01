@@ -14,7 +14,7 @@
   </head>
   <body class="font-poppins">
     <header
-      class="absolute top-0 left-0 z-10 flex items-center w-full pt-4 bg-transparent lg:pt-0"
+      class="absolute top-0 left-0 z-10 flex items-center w-full pt-4 lg:pt-0"
     >
       <div class="container pb-4 lg:pb-0">
         <div class="relative flex items-center justify-between">
@@ -38,13 +38,17 @@
                 class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"
               ></span>
             </button>
-            <nav
+            <!-- <nav
               id="nav-menu"
               class="absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full py-5 right-4 top-full lg:block lg:static lg:shadow-none lg:rounded-none lg:bg-transparent lg:max-w-full hidden"
+            > -->
+            <nav
+              id="nav-menu"
+              class="fixed hidden w-full max-h-screen py-5 bg-white right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full"
             >
               <ul class="block ml-5 lg:flex lg:justify-between">
-                <li>
-                  <a href="/" class="flex items-center">
+                <li class="m-5 lg:m-0">
+                  <a href="#" class="flex items-center">
                     <img
                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR4nO2by2oUQRSGP6Kom+BOvGwE14IP4AUUL8FF3kDMRtzpRsULqGBc6hvoE+hOQQSFDFkJIUsXrowgIoqoEIXBkoIz0AxDkp5TNT1d/X/QkO5KTvX/TU13V1MBIYQQQgghNmc7cB9YA0JhW8x0F9iWcyDcnoKgIfN2M6fA99bJGcrjrGWLGbPx0zqZpTxmLVvMmA0JzCDwPPDJLsJzjuOdHYFrlQvwR8fxppHAtgqcs1EVR9M5x/Gm0U3EiQQ6kcA2ClwGepX2Nu9nF7gDWB8S2AOWKr/T5v2BwHXLmpwL1sEq5bJqGWPW5Lyz4hcplwXLuJK68Akr/AXYRbnsBD5b1uMpCz+3ovGFY+ncs6zPUhU8CPSBP8BeymeP3Uhi5kMpCj62T+QJ3eGpZX7kLRRv7T+s2BG6w2Hgnz0T7vYUumry3tA93lr2K54iH6zIPN1j3rJHB2MzePE5M4VTr9z7M5X8YzNcYJqmXpPYTy6wawQJ9CGBTQv8ZgX2jWg7UOmg5PavOHhtRa6NaLtROYGS21+RYL1InAdfB/bbFov/tfliv+D2OBs5jZM7Vmh4FVMfuARctp9La4+Zb5GIU5XC34EXwNFK+zHgpbW1vX2Q8ySJ6cozYciVUwKdSKATCZyAwODctnoOOftp9BoYJDCNwLrUHYHj0poRWBcJNCRwAzQCnUigEwl0IoFOJNCJBBY0Eyn+QTpI4AQ/mUzn8BD4DSzW/PuiX6iGGufwa8S/LUggWxe4aBIfSGCHbiK5KUrgcgNr91IJ3KifiQnsNbB2L5XArGsCN+u8SUJJX+EmkEAnEuhEAp0UIbArW3KaDhTaLlAIIYQQQlAM/wEUPe9RnYg8KAAAAABJRU5ErkJggg=="
                       width="28"
@@ -52,7 +56,7 @@
                     />Produk</a
                   >
                 </li>
-                <li>
+                <li class="m-5 lg:m-0">
                   <a href="https://api.whatsapp.com/send?phone=6289614925681"class="flex items-center"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +283,7 @@
                     <p class="text-sm">Transfer Dana</p>
                 </div>
                 <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] border-slate-400 mr-4">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA" width="50px" class="mr-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA" width="30px" class="mr-2">
                   <p class="text-sm">Transfer BCA</p>
               </div>
               <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] border-slate-400 mr-4">
