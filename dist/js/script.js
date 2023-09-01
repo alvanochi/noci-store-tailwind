@@ -25,7 +25,6 @@ window.onscroll = function () {
   const fixedNav = header.offsetTop;
 
   if (window.scrollY > fixedNav) {
-    header.classList.add("navbar-fixed");
     header.classList.add("transparent");
     hamburger.classList.remove("hamburger-active");
     nav.classList.add("hidden");
@@ -33,7 +32,6 @@ window.onscroll = function () {
       hamburger.classList.add("border-[1px]");
     }
   } else {
-    header.classList.remove("navbar-fixed");
     hamburger.classList.add("border-[1px]");
   }
 };

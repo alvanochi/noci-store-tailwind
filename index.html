@@ -10,16 +10,21 @@
       rel="stylesheet"
     />
     <link href="dist/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="dist/img/logo_noci.png" type="image/x-icon">
     <title>Noci - Premium Digital</title>
   </head>
   <body class="font-poppins">
     <header
-      class="absolute top-0 left-0 z-10 flex items-center w-full pt-4 lg:pt-0"
+      class="fixed z-50 flex items-center w-full pt-4 bg-white border-down backdrop-blur-sm lg:pt-0"
     >
-      <div class="container pb-4 lg:pb-0">
+      <div class="w-full px-3 pb-4 lg:container lg:pb-0">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="/" class="text-3xl font-itim">Noci</a>
+            <a href="/" class="flex items-center text-3xl font-itim"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR4nO2by2oUQRSGP6Kom+BOvGwE14IP4AUUL8FF3kDMRtzpRsULqGBc6hvoE+hOQQSFDFkJIUsXrowgIoqoEIXBkoIz0AxDkp5TNT1d/X/QkO5KTvX/TU13V1MBIYQQQgghNmc7cB9YA0JhW8x0F9iWcyDcnoKgIfN2M6fA99bJGcrjrGWLGbPx0zqZpTxmLVvMmA0JzCDwPPDJLsJzjuOdHYFrlQvwR8fxppHAtgqcs1EVR9M5x/Gm0U3EiQQ6kcA2ClwGepX2Nu9nF7gDWB8S2AOWKr/T5v2BwHXLmpwL1sEq5bJqGWPW5Lyz4hcplwXLuJK68Akr/AXYRbnsBD5b1uMpCz+3ovGFY+ncs6zPUhU8CPSBP8BeymeP3Uhi5kMpCj62T+QJ3eGpZX7kLRRv7T+s2BG6w2Hgnz0T7vYUumry3tA93lr2K54iH6zIPN1j3rJHB2MzePE5M4VTr9z7M5X8YzNcYJqmXpPYTy6wawQJ9CGBTQv8ZgX2jWg7UOmg5PavOHhtRa6NaLtROYGS21+RYL1InAdfB/bbFov/tfliv+D2OBs5jZM7Vmh4FVMfuARctp9La4+Zb5GIU5XC34EXwNFK+zHgpbW1vX2Q8ySJ6cozYciVUwKdSKATCZyAwODctnoOOftp9BoYJDCNwLrUHYHj0poRWBcJNCRwAzQCnUigEwl0IoFOJNCJBBY0Eyn+QTpI4AQ/mUzn8BD4DSzW/PuiX6iGGufwa8S/LUggWxe4aBIfSGCHbiK5KUrgcgNr91IJ3KifiQnsNbB2L5XArGsCN+u8SUJJX+EmkEAnEuhEAp0UIbArW3KaDhTaLlAIIYQQQlAM/wEUPe9RnYg8KAAAAABJRU5ErkJggg=="
+              width="28"
+              class="mr-2 lg:hidden"
+            />Noci</a>
           </div>
           <div class="flex items-center w-full px-4">
             <button
@@ -47,16 +52,12 @@
               class="fixed hidden w-full max-h-screen py-5 bg-white right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full"
             >
               <ul class="block ml-5 lg:flex lg:justify-between">
-                <li class="m-5 lg:m-0">
+                <li class=" ml-7 lg:m-0">
                   <a href="#" class="flex items-center">
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR4nO2by2oUQRSGP6Kom+BOvGwE14IP4AUUL8FF3kDMRtzpRsULqGBc6hvoE+hOQQSFDFkJIUsXrowgIoqoEIXBkoIz0AxDkp5TNT1d/X/QkO5KTvX/TU13V1MBIYQQQgghNmc7cB9YA0JhW8x0F9iWcyDcnoKgIfN2M6fA99bJGcrjrGWLGbPx0zqZpTxmLVvMmA0JzCDwPPDJLsJzjuOdHYFrlQvwR8fxppHAtgqcs1EVR9M5x/Gm0U3EiQQ6kcA2ClwGepX2Nu9nF7gDWB8S2AOWKr/T5v2BwHXLmpwL1sEq5bJqGWPW5Lyz4hcplwXLuJK68Akr/AXYRbnsBD5b1uMpCz+3ovGFY+ncs6zPUhU8CPSBP8BeymeP3Uhi5kMpCj62T+QJ3eGpZX7kLRRv7T+s2BG6w2Hgnz0T7vYUumry3tA93lr2K54iH6zIPN1j3rJHB2MzePE5M4VTr9z7M5X8YzNcYJqmXpPYTy6wawQJ9CGBTQv8ZgX2jWg7UOmg5PavOHhtRa6NaLtROYGS21+RYL1InAdfB/bbFov/tfliv+D2OBs5jZM7Vmh4FVMfuARctp9La4+Zb5GIU5XC34EXwNFK+zHgpbW1vX2Q8ySJ6cozYciVUwKdSKATCZyAwODctnoOOftp9BoYJDCNwLrUHYHj0poRWBcJNCRwAzQCnUigEwl0IoFOJNCJBBY0Eyn+QTpI4AQ/mUzn8BD4DSzW/PuiX6iGGufwa8S/LUggWxe4aBIfSGCHbiK5KUrgcgNr91IJ3KifiQnsNbB2L5XArGsCN+u8SUJJX+EmkEAnEuhEAp0UIbArW3KaDhTaLlAIIYQQQlAM/wEUPe9RnYg8KAAAAABJRU5ErkJggg=="
-                      width="28"
-                      class="mr-2"
-                    />Produk</a
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrUlEQVR4nO2ZO4xMURjHf1YyjalorAqVkXg0VuFViA2xGla2oGIlXhGroluFR8Go6GzhHatCRWM7q/Co2MSuhFgVjV2yEhn55H/lkp2559wZe7+IX3KSyZzv/93/yb333O+cA/+pSwnoAW4Cr4AJNft9Q30W45qdwBhQy2ijwA4cMhuopow+BQ4DFWCOWkX/PUvFnZPWDVUZ+wrsAWY1iG0DehWbDMbN41QDvgBrInRrU4PZTsGUUu+E3YlY9kn7uugJoCf1TtgjE4tpniuH3dnCuCUTh5rIcUQ5rlMgIzKxpIkcS5XDvjOF8Vkmyk3kKCuH5SqM5HvgJc+/P5DJgHJjptpk3kHMc2C+9kebm2cgKwNmk5l6tEbUvyJP8m0SP2jCQChZeR6qvytP8oMSD9Tp35gyYL/zEpJnQP3mKZqzEvfX6R9NGbBaKS8heU6q/0yeC1yT2Eru6XiXMvA2zwUi8vSq3zxFMyRxZ53+LTJhF9+c5wIReTrlxTxF86YFdVSrqMiLLRmiy+upFtRRraIsL99ilwsLJPyIHz7JU3uMaLVEtujxwgt56sizDr+LH+7JU3eM6JhEF/HDJXnqixFdkOg4fjghT7b1FMwdiXbhh93yNBgjeiLROvywXp6GY0QfJFqIHxbJ03iowDbKvqt52jUvxfparJG/xx/j8mZ3J5MNCn6MP4blzd6X4NnhNv4YjJlNk/n6PP6oxnzfki/oUfzRF1Nx3Fewx6Oxbnmzuiu4ylyFPzpiqvKk7p+PP9pD10nJSmwq58HN36YtdOWarI1ti8YrYyF7CcluxSP8MiSPmxoF7VXQFfxyNeTwtV9Bp/DL6Ywd0N/2WPfjlwPyeJmAXe+t+KUr4JTg51mIBS3DL8vl8WWjoAkHp1K1wGZep8XjUVtW+3UU9wNY5IVjWCP9OAAAAABJRU5ErkJggg==" width="25" class="mr-2">Produk</a
                   >
                 </li>
-                <li class="m-5 lg:m-0">
+                <li class="mt-5 ml-7 lg:m-0">
                   <a href="https://api.whatsapp.com/send?phone=6289614925681"class="flex items-center"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -270,30 +271,30 @@
             <hr class="mt-5">
             <div class="flex flex-wrap items-center justify-center p-10">
                 <h1 class="mb-3 font-semibold sm:mr-3 lg:mb-0">Metode Pembayaran : </h1>
-                <div class=" py-1 px-3 flex mr-4 rounded-full mb-3 lg:mb-0 border-[1px]  border-slate-400">
+                <div class="select-none py-1 px-3 flex mr-4 rounded-full mb-3 lg:mb-0 border-[1px]  border-slate-400">
                     <img src="https://i.ibb.co/fXnY6H9/ovo.png" alt="OVO" width="20px" class="mr-2">
                     <p class="text-sm">Transfer OVO</p>
                 </div>
-                <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] mr-4 border-slate-400">
+                <div class="select-none py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] mr-4 border-slate-400">
                     <img src="https://i.ibb.co/Dzw6qY6/go-pay.png" alt="Gopay" width="20px" class="mr-2">
                     <p class="text-sm">Transfer Gopay</p>
                 </div>
-                <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 mr-4 border-[1px] border-slate-400">
+                <div class="select-none py-1 px-3 flex rounded-full mb-3 lg:mb-0 mr-4 border-[1px] border-slate-400">
                     <img src="https://i.ibb.co/yhZyS09/dana.png" alt="Dana" width="20px" class="mr-2">
                     <p class="text-sm">Transfer Dana</p>
                 </div>
-                <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] border-slate-400 mr-4">
+                <div class="select-none py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] border-slate-400 mr-4">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA" width="30px" class="mr-2">
                   <p class="text-sm">Transfer BCA</p>
               </div>
-              <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] border-slate-400 mr-4">
+              <!-- <div class=" py-1 px-3 flex rounded-full mb-3 lg:mb-0 border-[1px] border-slate-400 mr-4">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/SeaBank.svg" alt="SeaBank" width="50px" class="mr-2">
-                  <p class="text-sm">Transfer SeaBank</p>
-              </div>
+                  <p class="text-xs">Transfer SeaBank</p>
+              </div> -->
             </div>
         </div>
         <hr>
-        <div class="lg:container">
+        <div class="select-none lg:container">
             <div class="flex items-center justify-between p-10">
                 <div class="flex">
                     <a href="https://facebook.com/navlaID" class="mr-3"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="facebook" width="30px"></a>
