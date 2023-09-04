@@ -2,7 +2,8 @@ const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav-menu");
 const header = document.querySelector("header");
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener("click", (e) => {
+  e.preventDefault();
   hamburger.classList.toggle("hamburger-active");
   hamburger.classList.toggle("border-[1px]");
   nav.classList.toggle("hidden");
