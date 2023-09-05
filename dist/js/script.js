@@ -10,6 +10,14 @@ hamburger.addEventListener("click", (e) => {
   header.classList.remove("transparent");
 });
 
+hamburger.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  hamburger.classList.toggle("hamburger-active");
+  hamburger.classList.toggle("border-[1px]");
+  nav.classList.toggle("hidden");
+  header.classList.remove("transparent");
+});
+
 window.addEventListener("click", (e) => {
   if (hamburger.classList.contains("border-[1px]") && e.target != hamburger) {
     return;
@@ -36,3 +44,5 @@ window.onscroll = function () {
     hamburger.classList.add("border-[1px]");
   }
 };
+
+ScrollReveal().reveal("#card", { interval: 300, reset: true });
